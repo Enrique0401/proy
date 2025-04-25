@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="diseño/diseñoA.css">
+    <title>LifeHunter - Reino Animal</title>
+    <link rel="shortcut icon" href="imagenes/logo1png.png" type="image/x-icon">
+</head>
+
+<body>
+    <a href="../principal.html">
+        <p class="regreso">Regresar</p>
+    </a>
+    <div class="titulos">
+        <h1>Reino Animal</h1>
+        <p>Encuentra información detallada sobre cualquier animal.</p>
+        <p>Fecha de la última actualización: 2025-04-20</p>
+    </div>
+    <header>
+        <div class="filtros">
+            <input type="text" placeholder="Buscar..." id="buscar">
+            <select id="Subfilo">
+                <option value="">Subfilo</option>
+                <option value="vertebrado">Vertebrado</option>
+                <option value="invertebrado">Invertebrado</option>
+            </select>
+
+            <select id="Filo">
+                <option value="">Filo</option>
+                <option value="anelidos">Anélidos</option>
+                <option value="artropodos">Artrópodos</option>
+                <option value="braquiopodos">Braquiópodos</option>
+                <option value="briozoos">Briozoos</option>
+                <option value="chaetognatha">Chaetognatha</option>
+                <option value="cordados">Cordados</option>
+                <option value="cnidarios">Cnidarios</option>
+                <option value="ctenoforos">Ctenóforos</option>
+                <option value="ciclioforos">Ciclióforos</option>
+                <option value="crustaceos">Crustáceos</option>
+                <option value="dicemidos">Dicemidos</option>
+                <option value="equinodermos">Equinodermos</option>
+                <option value="entoproctos">Entoproctos</option>
+                <option value="gastrotricos">Gastrotricos</option>
+                <option value="gnatostomulidos">Gnatostomúlidos</option>
+                <option value="hemicordados">Hemicordados</option>
+                <option value="quinorrincos">Quinorrincos</option>
+                <option value="loriciferos">Loricíferos</option>
+                <option value="micrognatozoos">Micrognatozoos</option>
+                <option value="moluscos">Moluscos</option>
+                <option value="nematoda">Nematoda</option>
+                <option value="nematomorfos">Nematomorfos</option>
+                <option value="nemertinos">Nemertinos</option>
+                <option value="onychophora">Onychophora</option>
+                <option value="foronideos">Foronídeos</option>
+                <option value="placozoos">Placozoos</option>
+                <option value="platelmintos">Platelmintos</option>
+                <option value="porifera">Porifera</option>
+                <option value="priapúlidos">Priapúlidos</option>
+                <option value="rotiferos">Rotíferos</option>
+                <option value="tardigrada">Tardigrada</option>
+                <option value="xenacelomorfos">Xenacelomorfos</option>
+            </select>
+            <select id="clase">
+                <option value="">Clase</option>
+                <option value="aracnidos">Arácnidos</option>
+                <option value="mamiferos">Mamíferos</option>
+                <option value="aves">Aves</option>
+                <option value="reptiles">Reptiles</option>
+                <option value="anfibios">Anfibios</option>
+                <option value="peces">Peces</option>
+                <option value="insectos">Insectos</option>
+                <option value="poriferos">Poríferos</option>
+                <option value="celenteros">Celentéros</option>
+                <option value="gusanos">Gusanos</option>
+                <option value="moluscos">Moluscos</option>
+                <option value="equinodermos">Equinodermos</option>
+                <option value="artropodos">Artrópodos</option>
+            </select>
+            <select id="orden">
+                <option value="">Orden</option>
+                <option value="carnivoros">Carnívoros</option>
+                <option value="hervivoros">Hervívoros</option>
+                <option value="omnivoros">Omnívoros</option>
+                <option value="marsupiales">Marsupiales</option>
+                <option value="momotremas">Momotremas</option>
+                <option value="desdentados">Desdentados</option>
+                <option value="sirenios">Sirenios</option>
+                <option value="insectivoros">Insectívoros</option>
+                <option value="primates">Primates</option>
+                <option value="quiropteros">Quirópteros</option>
+                <option value="cetaceos">Cetáceos</option>
+                <option value="persiodactilos">Persiodáctilos</option>
+                <option value="artiodactilos">Artiodáctilos</option>
+                <option value="proboscideos">Proboscídeos</option>
+                <option value="roedores">Roedores</option>
+                <option value="Lagomorfos">Lagomorfos</option>
+                <option value="quelonios">Quelonios</option>
+                <option value="ofidios">Ofidios</option>
+                <option value="saurios">Saurios</option>
+                <option value="esfenisciformes">Esfenisciformes</option>
+                <option value="procelariformes">Procelariformes</option>
+                <option value="gaviformes">Gaviformes</option>
+                <option value="podicipitiformes">Podicipitiformes</option>
+                <option value="pelicaniformes">Pelicaniformes</option>
+                <option value="ciconiformes">Ciconiformes</option>
+                <option value="estrucioniformes">Estrucioniformes</option>
+                <option value="casuariformes">Casuariformes</option>
+                <option value="apterigiformes">Apterigiformes</option>
+                <option value="reiformes">Reiformes</option>
+                <option value="tinamiformes">Tinamiformes</option>
+                <option value="anseriformes">Anseriformes</option>
+                <option value="falconiformes">Falconiformes</option>
+                <option value="galliformes">galliformes</option>
+                <option value="gruiformes">Gruiformes</option>
+                <option value="caradriformes">Caradriformes</option>
+                <option value="columbiformes">Columbiformes</option>
+                <option value="cuculiformes">Cuculiformes</option>
+                <option value="psitaciformes">Psitaciformes</option>
+                <option value="estrigiformes">Estrigiformes</option>
+                <option value="caprimulgiformes">Caprimulgiformes</option>
+                <option value="apodiformes">Apodiformes</option>
+                <option value="coliformes">Coliformes</option>
+                <option value="troginoformes">Troginoformes</option>
+                <option value="coraciformes">Coraciformes</option>
+                <option value="piciformes">Piciformes</option>
+                <option value="paseriformes">Paseriformes</option>
+            </select>
+            <select id="familia">
+                <option value="">Familia</option>
+                <option value="bunodontes">Bunodontes</option>
+                <option value="rumiantes">Rumiantes</option>
+                <option value="camelidos">Camélidos</option>
+                <option value="mustelidos">Mustélidos</option>
+                <option value="mefitidos">Mefitídos</option>
+                <option value="procionidos">Prociónidos</option>
+                <option value="ursidos">Úrsidos</option>
+                <option value="canidos">Cánidos</option>
+                <option value="felinos">Felínos</option>
+                <option value="pinnipedos">Pinnípedos</option>
+                <option value="lemures">Lemures</option>
+                <option value="tarseros">Tarseros</option>
+                <option value="platirrinos">Platirrinos</option>
+                <option value="catarrinos">Catarrinos</option>
+            </select>
+            <button class="boton_busca">Enviar</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="galeria">
+            <article>
+                <img class="imagen abeja" src="imagenes/Abeja.png" alt="Animal">
+                <img src="imagenes/Transparente/AbejaT.png">
+            </article>
+            <br>
+            <div class="nombre">Abeja</div>
+        </div>
+        <br>
+        <div class="galeria">
+            <article>
+                <img class="imagen armadillo" src="imagenes/Armadillo.png" alt="Animal">
+                <img src="imagenes/Transparente/ArmadilloT.png">
+            </article>
+            <br>
+            <div class="nombre">Armadillo</div>
+        </div>
+        <br>
+        <div>
+            <article>
+                <img class="imagen alacran" src="imagenes/Alacran.png" alt="Animal">
+                <img src="imagenes/Transparente/AlacranT.png">
+            </article>
+            <br>
+            <div class="nombre">Alacrán</div>
+        </div>
+        <br>
+        <div>
+            <article>
+                <img class="imagen albatros" src="imagenes/Albatros.png" alt="Animal">
+                <img src="imagenes/Transparente/AlbatrosT.png">
+            </article>
+            <br>
+            <div class="nombre">Albatros</div>
+        </div>
+        <br>
+        <div>
+            <article>
+                <img class="imagen alapaca" src="imagenes/Alpaca.png" alt="Animal">
+                <img src="imagenes/Transparente/AlpacaT.png">
+            </article>
+            <br>
+            <div class="nombre">Alpaca</div>
+        </div>
+    </main>
+
+    <footer class="footer-contenedor">
+        <div class="footer-contenido">
+            <div class="footer-logo">
+                <img src="imagenes/Proyecto nuevo.png" alt="Logo de LifeHunter" class="logo-img">
+            </div>
+
+            <div class="footer-communidad">
+                <h3 class="community-titilo">Comunidad</h3>
+                <div class="redes-sociales">
+                    <a href="https://discord.com/" class="red-social" target="_blank" rel="noopener noreferrer"
+                        aria-label="Discord">
+                        <img src="imagenes/discord.png" alt="Discord" class="icono-social">
+                    </a>
+                    <a href="https://www.instagram.com/" class="red-social" target="_blank" rel="noopener noreferrer"
+                        aria-label="Instagram">
+                        <img src="imagenes/instagram.png" alt="Instagram" class="icono-social">
+                    </a>
+                    <a href="https://www.youtube.com/" class="red-social" target="_blank" rel="noopener noreferrer"
+                        aria-label="YouTube">
+                        <img src="imagenes/youtube.png" alt="YouTube" class="icono-social">
+                    </a>
+                    <a href="https://x.com/" class="red-social" target="_blank" rel="noopener noreferrer"
+                        aria-label="Twitter">
+                        <img src="imagenes/x.png" alt="Twitter" class="icono-social">
+                    </a>
+                    <a href="https://www.facebook.com/" class="red-social" target="_blank" rel="noopener noreferrer"
+                        aria-label="Facebook">
+                        <img src="imagenes/facebook.png" alt="Facebook" class="icono-social">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-divide">
+            <hr class="linea-dividir">
+        </div>
+
+        <div class="copyright">
+            <p class="copyright-texto">LifeHunter © 2025 Grupo 1. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
